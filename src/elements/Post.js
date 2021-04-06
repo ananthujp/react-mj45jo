@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from "./Avatar.js"
-import './Feed.css'
-function Feed(){
+import './Post.css'
+function Post(){
   return(
     <div>
     <p>Feed</p>
@@ -20,4 +20,4 @@ function Feed(){
   );
 }
 
-export default Feed;
+export default Post;
