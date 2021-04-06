@@ -4,7 +4,7 @@ import logo from "./logo1.svg";
 import "./App.css";
 import Diagrams from "./elements/Diag.js";
 import Tabulate from "./elements/Tabulate.js";
-import Post from "./elements/Post.js";
+import Feed from "./elements/Feed.js";
 
 function App() {
   const sheetURLDeploy =
@@ -34,7 +34,7 @@ function App() {
         )}
         <br/>
         
-          <Post />
+          <Feed />
         
         
       </header>

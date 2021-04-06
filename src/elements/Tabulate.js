@@ -3,9 +3,14 @@ import "./Tabulate.css";
 function Tabulate(props) {
   var db = JSON.parse(props.pass1);
   var [state, setState] = useState(true);
-  
+  {useEffect(() => {
+    state
+      ? (container.style.height = "125px")
+      : (container.style.height = "0px");
+  })}
   const parser = new DOMParser();
   return (
+    
     <div>
       <p onClick={() => (state ? setState(false) : setState(true))}>
         Hostel wise distribution{" "}
@@ -101,12 +106,9 @@ function Tabulate(props) {
           </tbody>
         </table>
       </div>
-      {useEffect(() => {
-    state
-      ? (container.style.height = "125px")
-      : (container.style.height = "0px");
-  })}
+      
     </div>
   );
 }
+
 export default Tabulate;
