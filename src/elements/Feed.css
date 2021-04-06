@@ -1,0 +1,21 @@
+.feed__o{
+  width: 100%;
+  background-color: #313640;
+  border-radius: 10px;
+  padding: 8px 8px;
+  display: grid;
+}
+p {
+  text-align: left;
+}
+.feed___o__avatar{
+  margin-right: 10px;
+}
+.feed___o__head{
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+h3{
+  font-size: medium;
+}

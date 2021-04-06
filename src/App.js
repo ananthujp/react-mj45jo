@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import logo from "./logo1.svg"
+import logo from "./logo1.svg";
 import "./App.css";
 import Diagrams from "./elements/Diag.js";
 import Tabulate from "./elements/Tabulate.js";
+import Feed from "./elements/Feed.js";
 
 function App() {
   const sheetURLDeploy =
@@ -18,7 +19,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-  
+       <h2> COVID19 </h2>
+       
         {data1 == null ? (
           "Loading..."
         ) : (
@@ -30,6 +32,11 @@ function App() {
         ) : (
           <Tabulate pass1={JSON.stringify(data1)} />
         )}
+        <br/>
+        
+          <Feed />
+        
+        
       </header>
     </div>
   );
