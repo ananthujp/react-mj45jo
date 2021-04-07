@@ -1,5 +1,6 @@
 import React from "react";
-import Avatar from "./Avatar.js";
+// import Avatar from "./Avatar.js";
+import Avatar from '@material-ui/core/Avatar';
 import "./Post.css";
 import GradeIcon from "@material-ui/icons/Grade";
 import ShareIcon from '@material-ui/icons/Share';
@@ -9,7 +10,7 @@ function Post(props) {
     <div>
       <div className="post__o">
         <div className="post___o__head">
-          <Avatar path={props.Prof__pic} />
+          <Avatar src={props.Prof__pic} className="post__avatar"/>
           <div className="post___o__headInfo">
             <h3>{props.User__id}</h3>
             <p>{props.time__stamp}</p>
@@ -24,11 +25,11 @@ function Post(props) {
             <GradeIcon />
             <p>Stars</p>
           </div>
-          <div className="post_option">
+          <div className="post__option">
             <ChatBubbleOutlineIcon />
             <p>Comment</p>
           </div>
-          <div className="post_option">
+          <div className="post__option">
             <ShareIcon />
             <p>Share</p>
           </div>
