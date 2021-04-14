@@ -5,8 +5,11 @@ import "./App.css";
 import Diagrams from "./elements/Diag.js";
 import Tabulate from "./elements/Tabulate.js";
 import Feed from "./elements/Feed.js";
+import NavBar from "./elements/NavBar.js";
+
 
 function App() {
+  
   const sheetURLDeploy =
     "https://script.google.com/macros/s/AKfycbxoDOWuEPgfo6jYyENnIsdhzTe_BkCXonPBCcSKBzCbj3aJ0B-zwcoi0EUmbvC1Vjg_ng/exec";
   const [data1, setdata] = useState(null);
@@ -19,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <NavBar />
        <h2> COVID19 </h2>
        
         {data1 == null ? (
